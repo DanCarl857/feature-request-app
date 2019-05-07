@@ -1,0 +1,8 @@
+# Database
+IWS.db
+
+# Migrations
+migrations/
+
+# Virtual environment
+flask/
