@@ -9,3 +9,4 @@ flask/
 
 # Others
 *.pyc
+instance/

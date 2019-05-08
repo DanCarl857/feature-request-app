@@ -1,6 +1,6 @@
 from flask import request
 from flask_restful import Resource
-from Model import db, Feature, FeatureSchema
+from models.Model import db, Feature, FeatureSchema
 
 features_schema = FeatureSchema(many=True)
 feature_schema = FeatureSchema()
@@ -69,7 +69,7 @@ class FeatureResources(Resource):
         feature = Feature.query.filter_by(id=data['id']).first()
         print(feature)
         if not feature:
-            return {'message': 'Feature does not exist'}, 400
+            return {'message': 'Feature does not exist'}, 404
         feature.title = data['title']
         feature.description = data['description']
         feature.client = data['client']
