@@ -12,4 +12,6 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 # Make Entrypoint executable
 RUN chmod +x /app/docker-entrypoint.sh
 
+EXPOSE 5000
+
 CMD [ "/bin/bash", "/app/docker-entrypoint.sh" ]
