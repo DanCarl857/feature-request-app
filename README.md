@@ -8,10 +8,6 @@ This repository houses code for a simple feature request api built for IWS emplo
 * Client
 * Product Aread
 
-### Demo
-A demo of the project can be found: [here]()
-![Component in action](screenshots/demo.png)
-
 ### Project Setup
 
 #### Prerequisites
@@ -40,6 +36,8 @@ A demo of the project can be found: [here]()
 * Run `pytest`
 
 ### Deploy
+You should have Docker and Docker componse installed for this to work.
+
 * Clone the project: * Clone project: `git clone https://github.com/DanCarl857/feature-request-app.git` or you could just download it.
 * Run `cd feature-request-app`
 * Run `docker-compose-up`
@@ -58,6 +56,12 @@ A demo of the project can be found: [here]()
 | `PUT` - `/features` | Updates feature request using payload provided |
 | `DELETE` - `/features/:number` | Deletes feature request with ID=`number` |
 
+
+### Demo
+A demo of the project can be found: [here]()
+![Component in action](screenshots/demo.png)
+
+### Technology Stack
 The technologies used in this project involve but are not limited to:
 * [Flask](http://flask.pocoo.org/)
 * [jQuery](https://jquery.com/)
