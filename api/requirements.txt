@@ -7,3 +7,4 @@ flask_sqlalchemy==2.3.2
 flask_marshmallow==0.8.0
 marshmallow-sqlalchemy==0.13.2
 pytest
+flask_cors
