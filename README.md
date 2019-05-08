@@ -41,7 +41,7 @@ You should have Docker and Docker componse installed for this to work.
 * Clone the project: * Clone project: `git clone https://github.com/DanCarl857/feature-request-app.git` or you could just download it.
 * Run `cd feature-request-app`
 * Run `docker-compose-up`
-* The web client can then be found at [http://0.0.0.0:8000]()
+* The web client can then be found at [http://0.0.0.0:8080]()
 * The api is available at [http://0.0.0.0:5000/api/v1]()
 
 #### API Documentation
