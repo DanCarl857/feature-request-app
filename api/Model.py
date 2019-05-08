@@ -9,7 +9,7 @@ db = SQLAlchemy()
 migrate = Migrate()
 
 class Feature(db.Model):
-    __tablename__ = "feature"
+    __tablename__ = "features"
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(200), nullable=False, unique=True)
     # Making this not nullable as we won't want a feature with no description
@@ -23,7 +23,7 @@ class Feature(db.Model):
         return '<Feature {}>'.format(self.title)
 
 class FeatureSchema(ma.Schema):
-    id = fields.Integer(dump_only=True)
+    id = fields.Integer()
     title = fields.String(required=True)
     description = fields.String(required=True, validate=validate.Length(1))
     client = fields.String(required=True)

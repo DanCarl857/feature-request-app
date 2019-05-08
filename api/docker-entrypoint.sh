@@ -2,7 +2,7 @@
 
 python migrate.py db init
 python migrate.py db migrate
-python migrate.py db upgrate
+python migrate.py db upgrade
 
-cd /api
+cd /app
 python run.py
