@@ -1,5 +1,10 @@
 $(document).ready(function() {
-    const baseUrl = 'http://0.0.0.0:5000/';
+
+    // Development URL
+    // const baseUrl = 'http://0.0.0.0:5000/';
+
+    // Production URL
+    const baseUrl = 'http://54.198.213.247:5000/';
 
     let table = $('#dtTable').DataTable({
         'processing': true,
