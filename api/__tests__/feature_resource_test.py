@@ -225,8 +225,6 @@ def test_feature_already_exists_on_creation(client):
         'target_date': '2019-09-09'
     })
 
-    print(res)
-
     assert(res.status_code == 404)
 
     res_message = res.json['message']

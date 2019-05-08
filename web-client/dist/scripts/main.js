@@ -15,7 +15,7 @@ $(document).ready(function() {
             {"data": "target_date"},
             {
                 mRender: function(data, type, row) {
-                    return '<a href="#"><span class="glyphicon glyphicon-pencil" data-id="' + row.id + '" data-bind="click: setValues()" id="btnEdit"></span></a> / <a href="#"><span class="glyphicon glyphicon-trash red" data-id="' + row.id + '" id="btnDelete"></span></a>'
+                    return '<a href="#"><span class="glyphicon glyphicon-pencil" data-id="' + row.id + '" id="btnEdit"></span></a> / <a href="#"><span class="glyphicon glyphicon-trash red" data-id="' + row.id + '" id="btnDelete"></span></a>'
                 }
             },
         ]
@@ -128,14 +128,15 @@ $(document).ready(function() {
         var featureId = $(this).attr('data-id');
 
         $.get(baseUrl + 'api/v1/features/' + featureId, function(result) {
-            var ticket = result['data'];
-            $('#editTitle').val(ticket['title']);
-            $('#editDescription').val(ticket['description']);
-            $('#editClient').val(ticket['client']);
-            $('#editProductArea').val(ticket['product_area']);
-            $('#editPriority').val(ticket['priority']);
-            $('#editTargetDate').val(ticket['target_date']);
-            $('#featureId').val(ticket['id']);
+            var feature = result['data'];
+            console.log(feature);
+            $('#editTitle').val(feature['title']);
+            $('#editDescription').val(feature['description']);
+            $('#editClient').val(feature['client']);
+            $('#editProductArea').val(feature['product_area']);
+            $('#editPriority').val(feature['priority']);
+            $('#editTargetDate').val(feature['target_date']);
+            $('#featureId').val(feature['id']);
 
             $('#editModal').modal('show');
         })
