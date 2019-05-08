@@ -53,7 +53,6 @@ $(document).ready(function() {
     }
 
     function validate(formData) {
-        console.log(formData);
         if (formData.title.trim() === '' || formData.description.trim() === '' || formData.client.trim() === '' || formData.productArea.trim() === '' || !formData.targetDate || !formData.priority) {
             return false;
         }
@@ -63,8 +62,6 @@ $(document).ready(function() {
     $('#addNewFeatureRequestBtn').click( function() {
         let formData = getFormData($("#featureRequestForm"));
         let isValid = validate(formData);
-
-        console.log(formData);
 
         // This handles the issue where server returns: 422 (UNPROCESSABLE ENTITY)
         let payload = {
