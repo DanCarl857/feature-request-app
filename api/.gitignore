@@ -6,3 +6,6 @@ migrations/
 
 # Virtual environment
 flask/
+
+# Others
+*.pyc
