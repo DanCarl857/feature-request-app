@@ -58,7 +58,7 @@ You should have Docker and Docker componse installed for this to work.
 
 
 ### Demo
-A demo of the project can be found: [here]()
+A demo of the project can be found: [here](http://54.198.213.247:8080)
 ![Component in action](screenshots/demo.png)
 
 ### Technology Stack
