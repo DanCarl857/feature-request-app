@@ -69,7 +69,7 @@ The technologies used in this project involve but are not limited to:
 * [SQLAlchemy](https://www.sqlalchemy.org/)
 * [Bootstrap]()
 * [Docker](https://docs.docker.com/)
-* Heroku(_for deployment_)
+* [AWS EC2](_for deployment_)
 
 ### Contributors
 * [Kouetchua 'Daniel' Carlson](https://github.com/DanCarl857)

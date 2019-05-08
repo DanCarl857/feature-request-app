@@ -16,11 +16,8 @@ class FeatureResources(Resource):
         if not json_data: 
             return {'message': 'No payload provided'}, 400
 
-        print(json_data)
         # Validate and deserialize input
         data, errors = feature_schema.load(json_data)
-        print(errors)
-        print(data)
         if errors: 
             return errors, 422
         feature = Feature.query.filter_by(title=data['title']).first()
@@ -59,7 +56,6 @@ class FeatureResources(Resource):
 
     def put(self):
         json_data = request.get_json(force=True)
-        print(json_data)
         if not json_data:
             return {'message': 'No payload provided'}, 400
         
@@ -67,7 +63,6 @@ class FeatureResources(Resource):
         if errors: 
             return errors, 422
         feature = Feature.query.filter_by(id=data['id']).first()
-        print(feature)
         if not feature:
             return {'message': 'Feature does not exist'}, 404
         feature.title = data['title']

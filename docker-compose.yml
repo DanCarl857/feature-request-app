@@ -2,11 +2,9 @@ version: '3'
 services:
   api:
     build: api
-    command: tail -F anything # Keep containers up and running forever
     ports:
       - "5000:5000"
   client:
     build: web-client
-    command: tail -F anything
     ports:
       - "8080:8080"
