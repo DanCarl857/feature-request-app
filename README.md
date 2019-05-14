@@ -58,7 +58,7 @@ You should have Docker and Docker componse installed for this to work.
 
 
 ### Demo
-A demo of the project can be found: [here](http://54.198.213.247:8080)
+A demo of the project can be found: [here](http://35.243.130.102:8080)
 ![Component in action](screenshots/demo.png)
 
 ### Technology Stack
@@ -69,7 +69,8 @@ The technologies used in this project involve but are not limited to:
 * [SQLAlchemy](https://www.sqlalchemy.org/)
 * [Bootstrap]()
 * [Docker](https://docs.docker.com/)
-* ~~AWS EC2 with and Ubuntu instance _for deployment_~~
+* ~~AWS EC2 with and Ubuntu instance _for deployment_~~(suspended account)
+* GCP with an Ubuntu Instance
 
 ### Contributors
 * [Kouetchua 'Daniel' Carlson](https://github.com/DanCarl857)
